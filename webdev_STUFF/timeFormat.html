@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <script type="text/javascript">
+      function time(hr,min,period){
+        if(min > 30 && period == "AM"){
+          console.log("it is almost ",hr+1," in the morning");
+
+        }
+        else if(min < 30 && period == "PM"){
+
+          console.log("it is just after ",hr,"in the evening");
+        }
+      }
+
+      time(7,15,"PM");
+    </script>
+  </head>
+  <body>
+
+  </body>
+</html>

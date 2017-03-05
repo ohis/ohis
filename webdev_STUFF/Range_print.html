@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Range Print</title>
+    <script type="text/javascript">
+       function printRange(start,end,skip){
+
+         if(skip == null){
+           skip = 1;
+         }
+         if(end == null){
+           end = start;
+           start = 0;
+
+         }
+         var r = start;
+        if(start >= 0 || start <=0 || end >= 0||end<=0){
+         while(r < end){
+           console.log(r);
+           r+=skip;
+
+         }
+
+       }
+     }
+
+     printRange(4);
+
+
+    </script>
+  </head>
+  <body>
+
+    <h1>Range Print</h1>
+  </body>
+</html>

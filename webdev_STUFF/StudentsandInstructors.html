@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>SandI</title>
+    <script type="text/javascript">"use strict"
+    var students = [
+            {first_name : 'Michael',last_name:'jordan'},
+            {first_name : 'John',last_name:'Rosales'},
+            {first_name : 'Mark',last_name:'Guillen'},
+            {first_name : 'KB',last_name:'Tone1'}
+
+    ]
+
+    var length = students.length;
+    for(var i = 0;i < students.length;i++){
+      console.log(students[i].first_name,students[i].last_name);
+    }
+
+// Part II 
+
+    var users ={
+      'Students' : [
+        {first_name : 'Michael',last_name:'jordan'},
+        {first_name : 'John',last_name:'Rosales'},
+        {first_name : 'Mark',last_name:'Guillen'},
+        {first_name : 'KB',last_name:'Tone1'}
+
+      ],
+      'Instructors':[
+        {first_name : 'Michael',last_name:'Choi'},
+        {first_name : 'Martin',last_name:'Puryear'},
+
+      ]
+    }
+      console.log("Students");
+      var lent = users.Students.length;
+    for(var j = 0;j<lent;j++){
+      var str1 = users.Students[j].first_name;
+      var str2 = users.Students[j].last_name;
+      var len = str1.length + str2.length;
+
+      console.log(j+1+" - "+users.Students[j].first_name+" "+users.Students[j].last_name+" - "+len)
+    }
+
+    console.log("Instructors");
+    var lents =users.Instructors.length;
+  for(var k = 0;k<lents;k++){
+    var str1 = users.Instructors[k].first_name;
+    var str2 = users.Instructors[k].last_name;
+    var len = str1.length + str2.length;
+
+    console.log(k+1+" - "+users.Instructors[k].first_name+" "+users.Instructors[k].last_name+" - "+len)
+  }
+    </script>
+  </head>
+  <body>
+
+  </body>
+</html>
